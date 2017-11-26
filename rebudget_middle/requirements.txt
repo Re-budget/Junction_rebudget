@@ -1,0 +1,11 @@
+Flask
+psycopg2
+Flask-SQLAlchemy
+gunicorn
+Flask-Restless
+requests
+numpy
+sklearn
+pandas
+Marshmallow
+flask-marshmallow
