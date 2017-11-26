@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/tvMainText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Recommended saving amount"
+        android:textSize="18sp"
+        android:textColor="@color/green"
+        />
+
+    <TextView
+        android:id="@+id/tvMainAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvMainText"
+        android:layout_marginTop="32dp"
+        android:text="€750"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMainAmount"
+        android:layout_marginStart="24dp"
+        android:text="for this month, based on your spending habits"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/ivWalletIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+
+</RelativeLayout>

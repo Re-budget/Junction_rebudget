@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    >
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tvYouSpend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="48dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/goalLine"
+                android:text="You spend"
+                />
+
+            <TextView
+                android:id="@+id/tvPercentageIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_below="@id/tvYouSpend"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:text="13%"
+                />
+
+            <ImageView
+                android:id="@+id/categoryIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/tvYouSpend"
+                android:src="@drawable/coffee"
+                android:contentDescription="@null"
+                />
+
+            <TextView
+                android:id="@+id/tvIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@id/tvYouSpend"
+                android:layout_toEndOf="@id/tvPercentageIndicator"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:text="in"
+                />
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@id/tvIn"
+                android:layout_toEndOf="@id/tvPercentageIndicator"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/goalLine"
+                android:text="restaurants"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
